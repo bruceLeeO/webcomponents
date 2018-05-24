@@ -3,7 +3,7 @@ A repository for all web projects, ui components, and ui framework developed whi
 
 Projects Live Demo
 
-- calculator
+- [calculator](https://bruceleeo.github.io/webcomponents/projects/calculator/calculator.html "An Android-Inspired Calculator")
 - forms
   - signup-form
   - login-form

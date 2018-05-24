@@ -1,0 +1,93 @@
+
+.skillpanel {
+	display:flex;
+  /*border: 1px solid;*/
+  justify-content: space-around;
+
+}
+
+.svgbar {
+	position: relative;
+	//display: flex;
+	//flex-direction: column;
+	//align-content: center;
+	//align-items: center;
+	border: 1px solid red;
+	margin: 0;
+	padding: 0;
+
+
+	svg {
+		border: 1px solid yellow;
+		padding: 0;
+		margin: auto;
+		margin-bottom: 0;
+		//width: 486px;
+		//height: 400px;
+	}
+}
+/*
+.svgbar2 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.svgbar-svg {
+	width: 486px;
+	height: 400px;
+	border: 1px solid blue;
+	vertical-align: middle;
+	position: relative;
+}
+
+.svgbar-skill-title {
+	//position: absolute;
+	//font-size: 24px;
+	//top: 125px;
+	//left: 80px;
+	color: red;
+	fill: currentColor;
+	//z-index: 9999;
+}
+
+.svgbar-skill-metric {
+	//position: absolute;
+	//font-size: 18px;
+	//top: 184px;
+	//left: 80px;
+	color: red;
+	fill: currentColor;
+}
+
+.svgbar-rect {
+	width: 30px;
+	height: 115px;
+	color: brown;
+	fill: currentColor;
+}
+
+@media (max-width: 1350px) {
+	.skillpanel {
+		flex-flow: column wrap;
+		//flex: 1;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.svgbar2{
+		.svgbar-svg {
+			width: 87vw;
+			height: 73vw;
+			border: 1px solid pink;
+		}
+		.svgbar-skill-title {
+			font-size: 1.8vw;
+		}
+		.svgbar-skill-metric {
+			font-size: 2.39vw;
+		}
+	}
+}
+*/

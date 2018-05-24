@@ -1,0 +1,31 @@
+/**
+ * reset box-sizing to border box for all element 
+ */
+html {
+	box-sizing: border-box;
+	//border: 5px solid orange;
+}
+
+// ensure all element inherit border-box box-sizing via direct code way
+//*,
+//*:before,
+//*:after {
+//	box-sizing: inherit;
+//}
+
+// another way to code by inheritance using @extend directive
+//* { @extend html; }
+//* ::before { @extend html; }
+//* ::after { @extend html; }
+
+
+// yet another way by nesting using & symbol on pseudo-classes
+* {
+	@extend html;
+	& ::before {
+		@extend html;
+	}
+	& ::after {
+		@extend html;
+	}
+}

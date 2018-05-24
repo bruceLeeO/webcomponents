@@ -1,0 +1,394 @@
+.digital-business-card {
+	width: 550px;
+	height: 325px;
+	position: relative;
+	perspective: 1000px;
+	margin: auto;
+	//@include border2-solid($darker-mid-grey);
+}
+
+.digital-business-card-axis {
+	width: 550px;
+	height: 325px;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: 2s;
+	//@include border2-solid($teal);
+}
+
+.digital-business-card-outerside {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	//transform-style: preserve-3d;
+	background-color: blue;
+	border-radius: 5px;
+}
+
+.frontside {
+	background-color: yellow;
+	transform: rotateX(0deg) translateZ(.010px);
+	margin: auto;
+	border: 1px solid;
+}
+
+.backside {
+	background-color: green;
+	transform: rotateX(180deg) translateZ(.010px);
+}
+
+.digital-business-card-rotate-icon {
+	@include size-large;
+	//position: absolute;
+	//top: 15px;
+	//left: 490px;
+	margin: 0 0 0 10px;
+	//z-index: 2;
+	//border: 1px solid;
+	&:hover{
+		color: silver;
+		fill: currentColor;
+	}
+}
+
+.digital-business-card-bookopen-icon {
+	@include size-large;
+	//border: 2px solid black;
+	border-radius: 30%;
+	//border-radius: 49%;
+	padding: 1px;
+	margin: 0;
+}
+
+.digital-business-card-social-icon {
+	@include size-medium;
+	//border: 2px solid black;
+	//border-radius: 30%;
+	//border-radius: 49%;
+	//padding: 0.04em;
+	//padding: 0.75px;
+	padding: 3px;
+	margin: 0;
+}
+
+.dbcard-name {
+	margin: 0 0 0 10px;
+	font-size: 225%;	
+	font-weight: 400;
+	line-height: 1;
+	//border: 1px solid;
+	width: 80%;
+	//float: left;
+	//@include clearfix;
+}
+
+.dbcard-title {
+	margin: 0 0 0 10px;
+	font-size: 115%;
+	line-height: 1;
+	//border: 1px solid;
+	width: 80%;
+	color: $darker-mid-grey;
+	//border:1px solid;
+}
+
+.dbcard-desc {
+	margin: 0 0 0 10px;
+	font-size: 90%;
+	line-height: 1.25;
+}
+
+.dbcard-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+	line-height: 1.5;
+	//@include border2-solid($dull-black);
+}
+
+.dbcard-item {
+	display: block;
+	//@include border2-solid($teal);
+	padding: 0;
+	margin: 0;
+	//font-size: 80%;
+}
+
+.dbcard-item-inline {
+	display: inline-block;
+	//@include border2-solid($teal);
+	padding: 0;
+	margin: 0;
+	//font-size: 80%;	
+}
+
+.dbcard-item-icon-inline {
+	display: inline-block;
+	//@include border2-solid($dull-black);
+	//border-radius: 50%;
+	padding: 5px;
+	margin: 1px;
+	//font-size: 80%;
+}
+.dbcard-link {
+	margin: 0 0 0 10px;
+	padding: 0 30px 0 0;
+	//@include border2-solid(red);
+
+	svg {
+		padding: 0;
+	}
+}
+
+.go-left {
+	@include float-left;
+	//@include border2-solid(purple);
+	padding: 0;
+	margin: 0;
+	//vertical-align: middle;
+	//@include clearfix();
+}
+
+.go-right {
+	//@include border2-solid(blue);
+	@include float-right;
+	//@include clearfix();
+	//padding: 0;
+	//margin: 0;
+}
+
+.dbcard-footer {
+	//@include border2-solid(violet);
+	//@include clearfix();
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+
+.dbcard-footer-item {
+	//@include border2-solid(red);
+	//font-size: 80%;
+	//padding-top: 15px;
+	margin: 30px 0 0 0;
+	padding: 0;
+
+	.dbcard-icon-book-open-link {
+		border: 2px solid black;
+		width: 100%;
+		height: 100%;
+		border-radius: 50px;
+		padding: 4.5px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		&:hover {
+			color: silver;
+			background-color: black;
+			fill: currentColor;
+		}
+		svg	{
+			vertical-align: middle;
+
+		}
+	}
+	h4 { 
+		//@include border2-solid(green);
+		margin: 0 0 0 10px;
+		line-height: 1;
+		font-size: 100%; 
+	}
+	p {
+	  //@include border2-solid(blue);
+	  margin: 0 0 0 10px;
+	  padding: 0;
+	  line-height: 1;
+	  font-size: 90%;
+	}
+}
+//.dbcard-footer-item-social-icon {
+//	@include border2-solid(red);
+//	margin-top: 12px;
+//}
+
+.dbcard-social-link {
+	margin: 0;
+	//padding: 0;	
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	//vertical-align: middle;
+	//text-align: center;
+	//@include border2-solid(red);
+	//@include clearfix();
+	//	a {
+	border: 2px solid black;
+	border-radius: 50px;
+	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	z-index: 3;
+	//}
+	svg {
+		margin: 0;
+        margin-bottom: 3px;
+		vertical-align: middle;
+		//border: 1px solid;
+	}
+	&:hover {
+		color: silver;
+		background-color: black;
+		fill: currentColor;
+	}
+/*
+	span {
+		border: 1px solid blue;
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+
+
+		svg {
+			margin: 0;
+
+			vertical-align: middle;
+			border: 1px solid;
+		}
+	}
+*/
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.digital-business-card {
+		//@include typography-for-smaller-device-600px-less;	
+		width: 90vw;
+		height: 55vw;
+	}
+	.digital-business-card-axis {
+		width: 90vw;
+		height: 55vw;
+	}
+	.digital-business-card-outerside {
+		width: 90vw;
+		height: 55vw;
+	}
+	.digital-business-card-rotate-icon {	
+		//@include size-large;
+		font-size: 3vw;
+		//border: 1px solid;
+		//float: right;
+	}
+	.digital-business-card-bookopen-icon {
+		//@include size-xlarge;
+		font-size: 4vw;
+		//padding: 0.0123vw;
+		margin: 0;
+	}
+
+	.digital-business-card-social-icon {
+		//@include size-large;
+		font-size: 2.75vw;
+		padding: 0.233vw;
+		//padding-top: 0.01vw;
+		//padding-bottom: 0.01vw;
+		margin: 0;
+	}
+
+	.dbcard-name {
+		margin: 0 0 0 0.78vw;
+		//font-size: 225%;
+		font-size: 7vw;
+		//line-height: 2.5vw;
+		//border: 1px solid;
+		width: 60vw;
+		//float: left;
+		//@include clearfix;
+	}
+
+	.dbcard-title {
+		margin: 0 0 0 0.78vw;
+		//font-size: 115%;
+		//line-height: 1.5;
+		font-size: 3.75vw;
+		//line-height: 1.85vw;
+		//border:1px solid;
+	}
+
+	.dbcard-desc {
+		font-size: 3.5vw;
+		margin: 0 0 0 0.78vw;
+		//font-size: 1.75vw;
+		//line-height: 1.75vw;
+		//border:1px solid;
+	}
+
+	.dbcard-list {
+		font-size: 3.5vw;
+		//line-height: 1.75vw;
+		//@include border2-solid($dull-black);
+		//border:1px solid;
+		margin-top: 0.23vw;
+		margin-bottom: 0.23vw;
+	}
+
+	.dbcard-item {
+		//display: block;
+		//@include border2-solid($teal);
+		//padding: 0;
+		//margin: 0;
+		//font-size: 80%;
+	}
+
+	.dbcard-item-inline {
+		//display: inline-block;
+		//@include border2-solid($teal);
+		//padding: 0;
+		//margin: 0;
+		//font-size: 80%;
+		//border:1px solid;
+	}
+	.dbcard-link {
+		margin: 0 0 0 0.78vw;
+		padding: 0 2.33vw 0 0;
+		//@include border2-solid(red);
+
+		svg {
+			padding: 0;
+		}
+	}
+	.dbcard-social-link {
+		//margin: 0;
+		padding: 0.38vw;
+		padding-top: 0.54vw;
+		padding-bottom: 0.54vw;
+		//text-decoration: none;
+		//@include border2-solid(red);
+		//@include clearfix();
+
+		svg {
+			margin: 0;
+			//padding: 0;
+		}
+	}	
+	.dbcard-footer-item {
+		font-size: 3.5vw;
+		//border: 1px solid;
+		margin-top: 0.233vw 0 0 0;
+	}
+	.dbcard-p-spacer {
+		line-height: 1vh;
+		//border: 1px solid;
+		margin-bottom: 2.33vw;
+	}
+	.dbcard-footer {
+		//border: 1px solid;
+		margin: 0 0 0 0.78vw;
+	}
+
+	.dbcard-desc-section {
+		//border:1px solid red;
+		padding-top: 0.23vw;
+	}
+}

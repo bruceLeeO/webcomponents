@@ -1,0 +1,100 @@
+.screen-width {
+	display: none;
+	padding: 50px;
+	background-color: $teal;
+	color: $dull-black;
+	border-radius: 50%;
+	position: fixed;
+	top: 150px;
+	left: 25px;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.scrollheight{
+	display: none;
+	padding: 50px;
+	background-color: $light-yellow-orange;
+	color: $dull-black;
+	border-radius: 50%;
+	position: fixed;
+	top: 150px;
+	left: 150px;
+	cursor: pointer;
+	z-index: 3;
+}
+
+.show-width-bubble {
+	display: block;
+	padding: 15px;
+	background-color: $teal;
+	color: $dull-black;
+	border-radius: 50%;
+	position: fixed;
+	top: 110px;
+	left: 25px;
+	cursor: pointer;
+	z-index: 3;	
+}
+
+.show-scrollheight-bubble {
+	display: block;
+	padding: 15px;
+	background-color: $light-yellow-orange;
+	color: $dull-black;
+	border-radius: 50%;
+	position: fixed;
+	top: 110px;
+	left: 60px;
+	cursor: pointer;
+	z-index: 3;
+}
+
+#return-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	/*background: rgb(0, 0, 0);
+	//background: rgba(0, 0, 0, 0.7);*/
+	background-color: #ff9948;
+	width: 50px;
+	height: 50px;
+	//display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	opacity: .75;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	z-index: 2;
+	color: #f2f5fa;
+
+	& svg {
+		color: $white;
+		fill: currentColor;
+		padding-top: 5px;
+		padding-left: 5px;
+		z-index: 2;
+	}
+}
+
+.scrolly-height {
+	//padding-left: 4px;
+}
+
+#return-to-top:hover {
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	#return-to-top {
+		bottom: 10px;
+		right: 10px;
+	}
+}

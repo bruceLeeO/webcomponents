@@ -1,0 +1,20 @@
+/**
+ * site header style
+ */
+.site-header {
+	background-color: $dull-black;
+	//border: 2px solid $dark-teal;
+	@include border2-solid($dull-black);
+	//text-align: center;
+}
+
+.header-logo {
+	h1	{
+		margin: 0.25em 0.25em;
+		color: $teal;
+	}
+
+	span {
+		color: $white;
+	}
+}

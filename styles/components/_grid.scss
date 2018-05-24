@@ -1,0 +1,271 @@
+/**
+ * default 12 column grid container
+ */
+.container {
+	width: 100%;
+  //border: 1px solid black;
+  //border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  //text-align: center;
+  //margin-bottom: 20px;	
+  //background-color: $light-teal;
+  //border: 1px solid $light-teal;
+}
+
+/**
+ * default row containers utilising flexbox
+ */
+.row {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	//justify-content: space-between;
+	//border: 4px solid pink;
+	//padding-bottom: 0.5em;
+}
+
+.row-till-498 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  //justify-content: space-between;
+  //border: 4px solid pink;
+  //padding-bottom: 0.5em;
+}
+
+.row-till-680 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  //justify-content: space-between;
+  //border: 4px solid pink;
+  //padding-bottom: 0.5em;
+}
+
+.row-till-768 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  //justify-content: space-between;
+  //border: 4px solid orange;
+  //padding-bottom: 0.5em;
+}
+
+.row-till-968 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  //justify-content: space-between;
+  //border: 4px solid pink;
+  //padding-bottom: 0.5em;
+}
+
+.row-till-1068 {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  //justify-content: space-between;
+  //border: 4px solid blue;
+  //padding-bottom: 0.5em;
+}
+
+.just-row {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  //border: 4px solid violet;
+ }
+
+.left-justify {
+	text-align: left;
+}
+
+.right-justify {
+	text-align: right;
+}
+
+[class*="col"] {
+  position: relative;  
+  float: left;
+  padding: 5px;
+  //background-color: $light-grey;
+  //opacity: 0.7;
+  //border: 4px solid green;
+  margin: 2px;
+  //border-radius: 5px;
+  //display: flex;
+}
+
+.col1 {
+  //width: 8.33%;
+  width: 7%;
+}
+
+.col2 {
+  //width: 16.66%;
+  width: 15%;
+}
+
+.col3 {
+  //width: 25%;
+  width: 23%;
+}
+
+.col4 {
+  //width: 33.33%;
+  width: 32%;
+}
+
+.col5 {
+  //widows: th: 41.66%;
+  width: 40%;
+}
+
+.col6 {
+  //width: 50%;
+  width: 48%;
+}
+
+.col7 {
+  //width: 58.33%;
+  width: 57%;
+}
+
+.col8 {
+  //width: 66.66%;
+  width: 65%;
+}
+
+.col9 {
+  //width: 75%;
+  width: 73%;
+}
+
+.col10 {
+  //width: 83.33%;
+  width: 82%;
+}
+
+.col11 {
+  //width: 91.66%;
+  width: 90%;
+}
+
+.col12 {
+  //width: 100%;
+  width: 98%;
+}
+
+.force-stay-width-320 {
+  .col3 {
+    width: 320px;
+  }   
+}
+
+.force-stay-width-498 {
+  [class*="col"] {
+    width: 498px;
+  }  
+}
+
+.force-stay-width-886 {
+  [class*="col"] {
+    width: 886px;
+  }  
+}
+
+//@media max-width: 1068
+@media (max-width: 1068px) {
+
+  .row-till-1068 {
+    flex-flow: column wrap;
+  } 
+
+  // force-row keeps the flex-direction and flow to the default row value
+	.force-row {
+		flex-flow: row nowrap;
+	}  
+
+  .force-stay-margin-auto {
+    [class*="col"] {
+      margin: auto;
+    }
+  }
+
+  .no-margin-auto {
+    [class*="col"] {
+      margin: 0;
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+  //.col3 { width: 320px; } 
+
+  .row {
+    flex-flow: column wrap;
+    .col6 {
+      width: 498px;
+    }
+  }
+}
+
+//@media max-width: 968px
+@media (max-width: 968px) {
+
+  .row-till-968 {
+    flex-flow: column wrap;
+  } 
+
+  .col8 {
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+  }  
+  .col4 { 
+    width: 428px;
+  }
+  //.col3 { width: 320px; }  
+}
+
+
+// row till 768px
+@media (max-width: 768px) {
+
+  .row-till-768 {
+    flex-flow: column wrap;
+  } 
+  //.col3 { width: 320px; }  
+}
+
+// row till 680px
+@media (max-width: 680px) {
+
+  .row-till-680 {
+    flex-flow: column wrap;
+  }
+  [class*="col"] {
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+  }    
+  //.col3 { width: 320px; } 
+}
+
+//@media max-width: 490px
+@media (max-width: 498px) {
+
+  .row-till-498 {
+    flex-flow: column wrap;
+  }  
+
+  .undo-force-stay-width-320 {
+    .col3 { width: 100%; }
+  }
+
+  .row {
+    .col6 {
+      width: 100%;  
+    }
+  }
+}

@@ -1,0 +1,124 @@
+// ----------------------------------------------------------
+// This file contains all application-wide Sass variables
+// ----------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Other nice font family
+/// @type List
+$other-nice-font-stack: -apple-system, BlinkMacSystemFont, 'Karla', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif !default;
+
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'Dejavu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// lightest-grey button color
+/// @type Color
+$lightest-grey-button: rgb(195, 206, 217) !default;
+
+/// light-grey button color
+/// @type Color
+$lighter-grey-button: rgb(176, 188, 199) !default;
+
+/// Light grey 
+/// @type Color 
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Darker medium grey
+/// @type Color
+$darker-mid-grey: rgb(131, 131, 131) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Lighter grey for background color
+/// @type Color
+$lighter-grey: rgb(243, 244, 245) !default;
+
+/// Dull gold for link hover or active
+/// @type Color
+$dull-gold: rgb(170, 170, 117) !default;
+
+/// Lightest-teal
+/// @type Color
+$lightest-teal: rgb(237, 250, 253) !default;
+
+/// Light teal
+/// @type Color
+$light-teal: rgb(163, 245, 248) !default;
+
+/// Teal
+/// @type Color
+$teal: rgb(81, 208, 239) !default;
+
+/// dark-teal color
+/// @type Color
+$dark-teal: rgb(72, 191, 220) !default;
+
+/// Light-blue
+/// @type Color
+$light-blue: rgb(222, 241, 245) !default;
+
+/// Light yellow-orange
+/// @type Color
+$light-yellow-orange: rgb(255, 203, 69) !default;
+
+/// Plain white
+/// @type Color
+$white: rgb(255, 255, 255) !default;
+
+/// dull black or fake black
+/// $type Color
+$dull-black: rgb(52, 56, 60) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// icon dark color fill
+/// @type Color
+$icon-dark-fill: rgb(118, 129, 140) !default;
+
+/// form-field medium shade text color
+/// @type Color
+$medium-shade-text-color: rgb(88, 97, 107) !default;
+
+/// beige color
+/// @type Color
+$beige: rgb(245, 245, 220) !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapper to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+	'small': 320px,
+	'medium': 768px,
+	'large': 1024px
+) !default;
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+/// $base-url: 'http://cdn.example.com/assess/';
+$base-url: '/assets/' !default;
+
+

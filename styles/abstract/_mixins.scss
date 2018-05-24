@@ -1,0 +1,171 @@
+/// add 2px, solid border mixin
+@mixin border2-solid {
+	-web-kit-border: 2px solid $dull-black;
+	-moz-border: 2px solid $dull-black;
+	-ms-border: 2px solid $dull-black;
+	border: 2px solid $dull-black;
+}
+
+/// add 2px, solid border mixin w/ param
+@mixin border2-solid ($color) {
+	-web-kit-border: 2px solid $color;
+	-moz-border: 2px solid $color;
+	-ms-border: 2px solid $color;
+	border: 2px solid $color;
+}
+
+/// add 2px, solid border bottom mixin w/ param
+@mixin border2-bottom-solid ($color) {
+	-web-kit-border-bottom: 2px solid $color;
+	-moz-border-bottom: 2px solid $color;
+	-ms-border-bottom: 2px solid $color;
+	border-bottom: 2px solid $color;
+}
+
+/// reshape container into pill shape mixin
+@mixin pill-shape {
+	-web-kit-border-radius: 9999em;
+	-moz-border-radius: 9999em;
+	-ms-border-radius: 9999em;
+	border-radius: 9999em;
+}
+
+/// add clearfix when you need it
+@mixin clearfix() {
+  	// http://nicolasgallagher.com/micro-clearfix-hack/ 
+	// USAGE: @include clearfix(); 
+	& {
+		*zoom: 1;
+	}
+
+	&:before,
+	&:after {
+	  content: "\00A0";
+	  display: block;
+	} 	
+	
+	&:after {
+	  clear: both;
+	  visibility: hidden;
+	  line-height: 0;
+	  height: 0;
+  	}
+}
+
+// another way to write micro-clearfix hack
+//@mixin clearfix {
+//  &::after{
+//  	content: '';
+//  	display: table;
+//  	clear: both;
+//  }
+//}
+
+/// resize container to small 
+@mixin size-small {
+	width: 1em;
+	height: 1em;
+}
+
+/// resize container to medium
+@mixin size-medium {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+/// resize container to large
+@mixin size-large {
+	width: 2em;
+	height: 2em;
+}
+/// resize container to extra large
+@mixin size-xlarge {
+	width: 2.5em;
+	height: 2.5em;
+}
+/// resize container to extra, extra large
+@mixin size-xxlarge {
+	width: 3em;
+	height: 3em;
+}
+
+/// float left
+@mixin float-left {
+	float: left;
+}
+
+/// float right 
+@mixin float-right {
+	float: right;
+}
+
+@mixin typography-for-smaller-device-600px-less {
+	/* Body Text */
+	body {
+	  font-family: $other-nice-font-stack;
+	  //font-family: $text-font-stack;
+	  /*  -apple-system,
+	    BlinkMacSystemFont,
+	    "Karla",
+	    "Segoe UI",
+	    "Roboto",
+	    "Oxygen",
+	    "Ubuntu",
+	    "Cantarell",
+	    "Fira Sans",
+	    "Droid Sans",
+	    "Helvetica Neue",
+	    Arial,
+	    sans-serif;*/
+	  //font-size: 135%;
+	  font-size: 1.75vw;
+	  line-height: 1.5vw;
+	  background-color: $white;
+	  color: $dull-black;
+	  margin: 0;
+	}
+
+	/* Vertical Rhythm */
+	blockquote,
+	dl,
+	figure,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	hr,
+	menu,
+	ol,
+	p,
+	pre,
+	summary,
+	table,
+	ul {
+	  margin-bottom: 3.125vh;
+	}
+
+	/* Headings */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+	  font-weight: 400;
+	  //line-height: 1.2vw;
+	  line-height: 2.5vw;
+	  color: #1e2226;
+	  margin-top: 4.16vh;
+	}
+
+	h1 {
+  	  font-size: 2.79vw;
+	}
+
+	h2 {
+	  font-size: 2.33vw;
+	}
+
+}

@@ -1,0 +1,229 @@
+/**
+ * TYPOGRAPHY
+ */
+
+/* Body Text */
+body {
+  font-family: $other-nice-font-stack;
+  //font-family: $text-font-stack;
+  /*  -apple-system,
+    BlinkMacSystemFont,
+    "Karla",
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;*/
+  //font-size: 135%;
+  font-size: 130%;
+  line-height: 1.5;
+  background-color: $white;
+  color: $dull-black;
+  margin: 0;
+}
+
+/* Vertical Rhythm */
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
+  margin-bottom: 24px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1e2226;
+  margin-top: 32px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
+}
+
+/* Lists */
+dl dt {
+  font-weight: 700;
+  color: #34383c;
+}
+
+dl dd {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+ol li,
+ul li {
+  margin-left: 18px;
+}
+
+ol {
+  list-style-: decimal;
+}
+
+ol ol {
+  list-style: upper-alpha;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+ol ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+/* Inline Elements */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: #ff9948;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Horizontal Rules */
+hr {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-top: 2px solid #f2f5fa;
+  margin-top: 32px;
+}
+
+/* Preformatted Text */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f2f5fa;
+  border: 1px solid #c3ced9;
+  border-radius: 4px;
+}
+
+code,
+kbd,
+samp {
+  white-space: nowrap;
+  padding: 1px 8px;
+  margin: 0;
+}
+
+pre {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 0;
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+  background-color: $white;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+span {
+  font-family: inherit;
+  font-size: inherit; 
+}
+
+q, 
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.font-size-120 {
+  font-size: 120%;
+}
+
+.font-size-150 {
+  font-size: 150%;
+}
+
+.font-size-180 {
+  font-size: 180%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.italized {
+  font-style: italic;
+}

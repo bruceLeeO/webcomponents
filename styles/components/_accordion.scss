@@ -1,0 +1,37 @@
+.accordion {
+	padding: 0;
+	max-width: 720px;
+	height: auto;
+	//border: 1px solid blue;
+	background-color: $white;
+	margin: auto;
+	margin-top: 0.25em;
+}
+
+.accordion-panel {
+	margin: 0;
+	//border: 1px solid red;
+	width: 100%;
+	position: relative;
+}
+
+.accordion-label {
+	border: 1px solid violet;
+	cursor: pointer;
+	background-color: violet;
+	color: $white;
+	padding: 0.25em;
+	&:hover {
+		font-weight: 700;
+		color: brown;
+	}
+}
+
+.accordion-content {
+	border: 1px solid silver;
+	height: 0;
+	//height: 150px;
+	overflow: hidden;
+	background-color: silver;
+	//padding: 0.25em;
+}

@@ -1,0 +1,9 @@
+/**
+ * site footer style
+ */
+.site-footer {
+	background-color: $dark-teal;
+	//border: 2px solid $dark-teal;
+	@include border2-solid($dark-teal);
+	text-align: center;
+}

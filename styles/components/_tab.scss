@@ -1,0 +1,151 @@
+.tab {
+	position: relative;
+	//width: 960px;
+	max-width: 1080px;
+	height: auto;
+	//border: 1px solid blue;
+	margin: auto;
+	display: flex;
+	//background-color: $white;
+}
+
+.tab-index {
+	//border: 1px solid green;
+	//flex: 1;
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+.tab-index-label {
+	//margin-left: 1.5px;
+	margin-left: 0.95px;
+	//width: 101.5%;
+	width: 100%;
+	//border: 1px solid blue;
+	//border: 1px solid $white;
+	border: 1px solid $dull-black;
+	padding: 9px;
+	cursor: pointer;
+	z-index: 9;
+	border-top-left-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
+	
+	background-color: $light-grey;
+
+
+	&:hover {
+		font-weight: 700;
+		color: violet;
+	}
+}
+
+.tab-index-label--active {
+	//border-color: red;
+	border-right-style: none;
+	//border-right: 2px solid $white;	
+	//background-color: $light-teal;
+	background-color: $white;
+	z-index: 1;
+}
+
+.tab-body {
+	//border: 1px solid green;
+	flex: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.tab-body-content {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	//border: 1px solid blue;
+	//border: 1px solid $white;
+	border: 1px solid $dull-black;
+	padding: 3px;
+	//height: 156.75px; 
+	height: 656.75px; 
+	//z-index: 1;
+	background-color: $white;
+	display: none;
+	border-top-right-radius: 0.2em;
+	border-bottom-right-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
+	overflow: hidden;
+}
+/*
+.tab-body-content:nth-of-type(4) {
+	display: block;
+}*/
+
+.tab-content--carousel-section {
+	position: relative;
+	//border: 1px solid green;
+	width: 100%;
+	height: 77%;
+}
+.tab-content--desc-section {
+	position: relative;
+	//border: 1px solid red;
+}
+.tab-content-title {
+	margin: 5px 5px;
+	line-height: 1.25;
+	//border: 1px solid;
+}
+
+.tab-content-desc {
+	margin: 5px 5px;
+	font-size: 85%;
+	line-height: 1.25;
+	//border: 1px solid;
+}
+.tab-content-list {
+	list-style: none;
+	margin: 5px 5px;
+	font-size: 85%;
+	//line-height: 1.25;
+	//border: 5px solid green;
+}
+
+.tab-content-item {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.tab-content-item-inline {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	//border: 1px solid violet;
+	list-style: none;
+}
+
+.tab-content-link {
+	margin: 0 0 0 5px;
+	padding: 0 30px 0 0;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	//border: 2px solid green;
+	z-index: 3;
+	span {
+		margin: 0;
+		padding:0;
+		border-radius: 50px;
+		padding: 2px 1px 5px 0.5px;
+		border: 2px solid black;
+		margin-right: 5px;
+		svg {
+			margin: 0;
+			margin-left: 5px;
+			//margin-bottom: 3px;
+			vertical-align: middle;
+			@include size-small;
+			//border: 1px solid red;
+		}
+	}
+}

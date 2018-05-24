@@ -1,0 +1,61 @@
+/**
+ * add varying shade of colors to the different section of the page
+ */
+.about-section {
+	//background-color: $lighter-grey;
+	//border: 4px solid $darker-mid-grey;
+	background-color: $white;
+	border: 2px solid $white;
+}
+
+/**
+ * section-title
+ */
+.section-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+/**
+ * article-title
+ */
+.article-title {
+	font-size: 190%;
+	font-weight: 800;
+}
+
+/**
+ * article-subtitle
+ */
+.article-subtitle {
+  color: $darker-mid-grey;	
+}
+
+/**
+ * about-section media style
+ */
+.media {
+	//@include border2-solid($dull-black);
+	width: 280px;
+	//width: 100%;
+	height: auto;
+	margin: auto;
+	padding: auto;
+	margin-left: 15px;
+} 
+
+.projects-section {
+	background-color: $light-teal;
+	border: 2px solid $light-teal;
+}
+
+.skills-section {
+	background-color: $mid-grey;
+	border: 2px solid $mid-grey;
+}
+
+.contact-section {
+	background-color: $light-grey;
+	border: 2px solid $light-grey;
+}

@@ -27,7 +27,7 @@ UI Live Demo
   
 Non JS UI Live Demo
 
-  - accordion
+  - [accordion](https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/accordion/accordion-nonjs-ui.html "NonJS Accordion UI Component")
   - card
   - carousel
   - dbcard

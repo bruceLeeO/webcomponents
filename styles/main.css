@@ -2700,5 +2700,43 @@ body {
     font-size: 20px;
   }
 }
+/**
+ * NonJS Accordion UI Component
+ */
+body {
+  margin: 3rem auto;
+  width: 500px;
+}
+
+/* select the input element */
+div.accordionComponent input {
+  display: none;
+}
+
+/* select the label element */
+div.accordionComponent label {
+  display: block;
+  background: brown;
+  width: 500px;
+  margin-bottom: 2px;
+  padding: 2px 0 2px 0;
+  color: lightgreen;
+}
+
+/* select the accordion's content */
+div.accordionContent {
+  display: none;
+}
+
+/* when check, select the next sibling  */
+div.accordionComponent input:first-of-type:checked ~ div.accordionContent:first-of-type,
+div.accordionComponent input:nth-of-type(2):checked ~ div.accordionContent:nth-of-type(2),
+div.accordionComponent input:nth-of-type(3):checked ~ div.accordionContent:nth-of-type(3),
+div.accordionComponent input:nth-of-type(4):checked ~ div.accordionContent:nth-of-type(4) {
+  display: block;
+  background: lightblue;
+  width: 498px;
+  border: 1px solid;
+}
 
 /*# sourceMappingURL=main.css.map */

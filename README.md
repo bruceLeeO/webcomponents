@@ -16,7 +16,7 @@ Projects Live Demo
 - product-listing
 
 UI Live Demo
-  - accordion
+  - [accordion](https://bruceleeo.github.io/webcomponents/ui/accordion/accordion-js-ui.html "JS Accordion UI Component")
   - card
   - carousel
   - dbcard

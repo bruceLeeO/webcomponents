@@ -1,0 +1,57 @@
+/**
+ * non js image gallery ui component
+ */
+.gal {
+  //border: 5px solid yellow;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.galThumbnail {
+  //border: 5px solid red;
+  width: 100%;
+  //height: auto; 
+}
+
+.galImgToggle {
+  display: none;
+}
+
+.galImgThumbnail {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  opacity: 0.5;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.galImgThumbnail img {
+  width: 100%;
+  height: 100%;
+  //border: 0.5em solid;
+  border: 5px solid;
+}
+
+.galImage {
+  position: absolute;
+  //border: 5px solid green;
+  width: 100%;
+  opacity: 0;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+  overflow: hidden;
+}
+
+.galImage img {
+  width: 100%;
+  max-height: 500px;
+}
+
+.galImgToggle:checked + .galImgThumbnail {
+  opacity: 1;
+}
+
+.galImgToggle:checked ~ .galImage {
+  opacity: 1;
+}

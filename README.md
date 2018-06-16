@@ -33,5 +33,5 @@ Non JS UI Live Demo
   - [drop-down-menu](https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/drop-down-menu/drop-down-menu-nonjs-ui.html "NonJS Drop-down Menu Component")
   - [flipnav](https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/flipnav/flipnav-nonjs-ui.html "NonJS Flipnav Menu Component")
   - [image-gallery](https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/image-gallery/image-gallery-nonjs-ui.html "NonJS Image Gallery Component")
-  - tab
+  - [tab](https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/tab/tab-nonjs-ui.html "NonJS Tab Component")
   - tooltip

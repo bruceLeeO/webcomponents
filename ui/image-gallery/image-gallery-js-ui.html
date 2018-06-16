@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Gallery with JavaScript</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+  <style>
+  body {
+    width: 50%;
+    margin: 3rem auto;
+    box-sizing: border-box;
+  }
+
+  body * {
+    box-sizing: inherit;
+  }
+  </style>  
+</head>
+<body>
+	<section class="gal">
+	<div class="galThumbnail">
+	  <span class="galImgThumbnail" onclick="objImage.currentSlide(1)">
+	    <img src="http://www.extravaganzi.com/wp-content/uploads/2011/06/Austrian-Alps-1.jpg">
+	  </span>
+	  <div class="galImage">
+	    <img src="http://www.extravaganzi.com/wp-content/uploads/2011/06/Austrian-Alps-1.jpg">
+	  </div>
+	</div>
+	<div class="galThumbnail">
+	  <span class="galImgThumbnail" onclick="objImage.currentSlide(2)">
+	    <img src="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-McLaren-P1-GTR-Yellow-Sports-Car-PNG-Image.png">
+	  </span>
+	  <div class="galImage">
+	    <img src="http://www.pngpix.com/wp-content/uploads/2016/06/PNGPIX-COM-McLaren-P1-GTR-Yellow-Sports-Car-PNG-Image.png">
+	  </div>
+	</div>
+	<div class="galThumbnail">
+	  <span class="galImgThumbnail" onclick="objImage.currentSlide(3)">
+	    <img src="http://static.panoramio.com/photos/large/26404466.jpg">
+	  </span>
+	  <div class="galImage">
+	    <img src="http://static.panoramio.com/photos/large/26404466.jpg">
+	  </div>
+	</div>
+	<div class="galThumbnail">
+	  <span class="galImgThumbnail" onclick="objImage.currentSlide(4)">
+	    <img src="https://img.autobytel.com/2017/ford/shelby-gt350/2-800-oemexteriorfront1300-80398.jpg">
+	  </span>
+	  <div class="galImage">
+	    <img src="https://img.autobytel.com/2017/ford/shelby-gt350/2-800-oemexteriorfront1300-80398.jpg">
+	  </div>
+	</div>
+	<div class="galThumbnail">
+	  <span class="galImgThumbnail" onclick="objImage.currentSlide(5)">
+	    <img src="http://images.wisegeek.com/jungle-scene.jpg">
+	  </span>
+	  <div class="galImage">
+	    <img src="http://images.wisegeek.com/jungle-scene.jpg">
+	  </div>
+	</div>	
+	</section>
+	<script src="../../scripts/image-gallery-ui.js"></script>
+</body>
+</html>

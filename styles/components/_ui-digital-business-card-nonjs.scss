@@ -1,0 +1,255 @@
+/**
+ * Non JS Digital Business Card UI Component
+ */
+label {
+  perspective: 1000px;
+  display: block;
+  width: 340px;
+  height: 200px;
+  position: absolute;
+  cursor: pointer;
+  color: #eee;
+  //border: 2px solid green;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 2s;
+}
+
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  //text-align: center;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  //border: 1px solid red;
+}
+
+.front {
+  background: url(../ui/nonjs-ui/digital-business-card/img/bg1.png) no-repeat;
+}
+
+.back {
+  /*background: #222eee;*/
+  color: #eee;
+  transform: rotateX(180deg);
+  background: url(../ui/nonjs-ui/digital-business-card/img/wall-of-lawn.png) no-repeat;
+}
+
+label:hover .card {
+  transform: rotateX(25deg);
+  box-shadow: 20px 20px 20px rgba(50,50,50,.2);
+}
+
+:checked + .card {
+  transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+  transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+label input {
+  display: none;
+}
+
+.card .back header canvas {
+  background: transparent;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 310px;
+  color: red;
+  margin: 0;
+  transform: scale(2.5);
+}
+
+.card .back section {
+  width: 250px;
+  height: 160px;
+  //border: 2px solid;
+}
+
+.card .back footer {
+  text-align: left;
+  background: transparent;
+  margin: 2px 0 10px 10px;
+  padding:0;
+  width:50%;
+  //border: 1px solid;
+}
+
+.card header {
+  position: relative;
+}
+
+.card .front h2 {
+  margin: 2px 0 0 10px;
+  width: 70%;
+  //border: 1px solid black;
+  color: #eee;
+}
+
+.card .front canvas {
+  background: transparent;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 310px;
+  color: red;
+  margin: 0;
+  transform: scale(2.5);
+}
+
+.card .front section p:first-of-type {
+  //background: green;
+  font-size: 80%;
+  margin: 0 10px 5px 10px;
+}
+ 
+.card .front section p:last-of-type {
+  //background: red;
+  font-size: 65%;
+  margin: 10px;
+  line-height: 1.25;
+}
+
+.card .front section:last-of-type ul {
+  //background: orange;
+  font-size: 55%;
+  margin: 15px 10px 10px 10px;
+}
+
+.card .front section:last-of-type li {
+  display: inline-block;
+  /*background: violet;*/
+  padding: 0;
+  margin: 0 16px 0 0;
+  //border: 2px solid blue;
+  list-style: none;
+}
+
+.card .front section:last-of-type li a {
+  text-decoration: none;
+  color: pink;
+  //background-color: green;
+  padding: 0;
+  margin-left: 0;
+
+}
+
+.card .front footer div:first-of-type{
+  position: absolute;
+  top: 165px;
+  left: 10px;
+  background: transparent;
+  padding: 0 0 0 0;
+  margin-left: 0 0 0 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+
+.card .front footer div:first-of-type img {
+  width: 25px;
+  height: 25px;
+}
+
+.card .front footer div:last-of-type {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  top: 165px;
+  left: 40px;
+  font-size: 10px;
+  margin-left: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.card .front footer div:last-of-type p:first-of-type {
+  margin: 0 0 0 0;
+  /*background: red;*/
+  text-align: left;
+}
+
+.card .front footer div:last-of-type p:last-of-type {
+  margin: 0 0 0 0;
+  /*background: yellow;*/
+  text-align: left;
+}
+
+.card .front footer div:last-of-type p:last-of-type a {
+  margin: 0 0 0 0;
+  /*background: yellow;*/
+  text-decoration: none;
+  color: pink;
+}
+
+.card .front footer ul:only-of-type li{
+  display: inline;
+}
+
+.card .front footer ul:only-of-type li:first-of-type {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 167px;
+  left: 200px;
+  /*border-radius: 20px;*/
+}
+
+.card .front footer ul:only-of-type li:first-of-type img {
+  width: 20px;
+  height: 20px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(2) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 167px;
+  left: 230px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(2) img {
+  width: 20px;
+  height: 20px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(3) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 167px;
+  left: 260px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(3) img {
+  width: 20px;
+  height: 20px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(4) {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 167px;
+  left: 290px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(4) img {
+  /*border:1px solid silver;*/
+  /*border-radius: 90% ;*/
+  width: 20px;
+  height: 20px;
+}

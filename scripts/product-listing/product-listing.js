@@ -217,6 +217,6 @@
   	evt.preventDefault();
   }
 
-  var promoForm = document.getElementsByClassName("promocode-form");
-  promoForm[0].addEventListener("submit",preventFormDefault,true);
+  var promoForm = document.getElementById("promocode-form-id");
+  promoForm.addEventListener("submit",preventFormDefault,true);
 })(window);	

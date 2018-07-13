@@ -2,7 +2,10 @@
 @import 'abstract/mixins';
 @import 'base/base';
 @import 'base/typography';
-@import 'components/calculator';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'components/grid';
+@import 'layout/section';
 @import 'components/ui-accordion-nonjs';
 @import 'components/ui-accordion';
 @import 'components/project-accordion';
@@ -11,3 +14,5 @@
 @import 'components/ui-image-gallery-nonjs';
 @import 'components/ui-image-gallery';
 @import 'components/ui-tab-nonjs';
+@import 'components/calculator';
+@import 'components/product-listing';

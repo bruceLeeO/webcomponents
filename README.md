@@ -13,7 +13,7 @@ Projects Live Demo
   - credit-debit-form
   - contact-form
   - schedule-form
-- product-listing
+- [product-listing](https://bruceleeo.github.io/webcomponents/projects/product-listing/product-listing.html "Product Listing Page")
 
 UI Live Demo
   - [accordion](https://bruceleeo.github.io/webcomponents/ui/accordion/accordion-js-ui.html "JS Accordion UI Component")

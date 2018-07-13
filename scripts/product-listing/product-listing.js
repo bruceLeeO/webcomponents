@@ -214,6 +214,7 @@
   };
 
   function preventFormDefault(evt) {
+  	console.log("right b4 preventDefault....");
   	evt.preventDefault();
   }
 

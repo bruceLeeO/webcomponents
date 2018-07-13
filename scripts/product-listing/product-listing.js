@@ -213,11 +213,14 @@
     return numStr;
   };
 
+  /* method to prevent form submission, must set form method='post' */
   function preventFormDefault(evt) {
-  	console.log("right b4 preventDefault....");
+  	//console.log("right b4 preventDefault....");
   	evt.preventDefault();
   }
 
+  /* retrieve the promocode-form and attach submit event listener to it */
   var promoForm = document.getElementById("promocode-form-id");
   promoForm.addEventListener("submit",preventFormDefault,true);
+
 })(window);	

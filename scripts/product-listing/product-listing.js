@@ -211,5 +211,12 @@
   var addDollarSign = function(num) {
     var numStr = "$"+num;
     return numStr;
-  };  	
+  };
+
+  function preventFormDefault(evt) {
+  	evt.preventDefault();
+  }
+
+  var promoForm = document.getElementsByClassName("promocode-form");
+  promoForm.addEventListener("submit",preventFormDefault,true);
 })(window);	

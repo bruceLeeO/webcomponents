@@ -1,7 +1,7 @@
 (function(window){
 
 	var validator = {};
-	validator.passwordErrMsg, validator.confirmPasswordErrMsg, validator.emailErrMsg = "";
+	validator.passwordErrMsg, validator.confirmPasswordErrMsg, validator.emailErrMsg, validator.usernameOrEmailErrMsg = "";
 
 	var isExpressionInArrs = function(arrs,exp) {
 	   //console.log("arrs.... "+arrs);
@@ -98,11 +98,33 @@
 				return true;
 			}
 		}
-		console.log(email+" missing '@' or '.' -- thus, invalid");
-		validator.emailErrMsg = email+" is missing '@' or '.'";
+		if (numberOfEmailChar(email,"@") < 1) {
+			console.log(email+" missing '@' -- thus, invalid");
+			validator.emailErrMsg = email+" is missing '@'";		
+		}
+		if (numberOfEmailChar(email,".") < 1) {
+			console.log(email+" missing '.' -- thus, invalid");
+			validator.emailErrMsg = email+" is missing '.'";		
+		}
 		return false;
 	}
 
+	validator.isUsernameOrEmail = function (usernameOrEmail) {
+		if (isExpressionInArrs(usernameOrEmail,"@") || isExpressionInArrs(usernameOrEmail,".")) {
+			console.log("It is probably an email but is "+usernameOrEmail+" valid email?");
+			if (validator.isEmailAddress(usernameOrEmail)) {
+				validator.usernameOrEmailErrMsg = "";
+				return true;
+			} else {
+				validator.usernameOrEmailErrMsg = validator.emailErrMsg;
+				return false;
+			}
+		} else { 
+			console.log(usernameOrEmail.value+" must be the username");
+			validator.usernameOrEmailErrMsg = "";
+			return true;
+		}
+	}
 	validator.isBeforeToday = function (input) {	
 		var inputDate = new Date(input);
 		//console.log("Input date is "+inputDate);

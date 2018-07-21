@@ -6,7 +6,7 @@ Projects Live Demo
 - [calculator](https://bruceleeo.github.io/webcomponents/projects/calculator/calculator.html "An Android-Inspired Calculator")
 - forms
   - [signup-form](https://bruceleeo.github.io/webcomponents/projects/forms/signup.html "Signup Form")
-  - login-form
+  - [login-form](https://bruceleeo.github.io/webcomponents/projects/forms/login.html "Login Form")
   - billing-shipping-form
   - search-form
   - color-picker-form

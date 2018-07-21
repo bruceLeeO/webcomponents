@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RGB Color Picking Form UI Component</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/main.css">
+	<style>
+		body {
+			margin: 3rem auto;
+			max-width: 360px;
+		}
+		label {
+			margin: 0.25em;
+			padding: 0.25em;
+		}
+		input[type=range] {
+			width: 50%;
+			background-color: #f3f2f2;
+			border-style: none;
+		}
+		input[type=text] {
+			width: 50%;
+			text-align: center;
+			border-style: none;
+			border-radius: 4px;
+			border: 1px solid black;
+		}
+		#rgbOutput { width: 100%; }
+		
+		.rgbForm {
+			width: 360px;
+			background-color: #f3f2f2;
+			padding: 1em;
+			border-radius: 4px;
+			border: 1px solid;
+		}
+	  .form-group {
+	  	align-items: center;
+	  	/*border: 1px solid red;*/
+	  }
+		.tooltip .tooltiptext {
+      left: 25%;
+      width: 320px;
+      padding: 0.25em;
+		}
+
+		.tooltip {
+			/*border: 1px solid;*/
+		}
+
+		.red {
+	    background: rgb(255,0,0);
+	    color: rgb(255,255,255);
+	  }
+	  .green {
+	    background: rgb(0,255,0);
+	    color: rgb(255,255,255);
+	  }
+	  .blue {
+	    background: rgb(0,0,255);
+	    color: rgb(255,255,255);
+	  }
+    h2 {
+      margin-top: 0.5em;
+    } 	  
+	</style>
+	<script>
+		function updateRed(val) {
+		  document.getElementById('redInput').value=val;
+		  var rVal=document.getElementsByClassName("red");
+		  var newRGB = "rgb("+val+",0,0)";
+		  rVal[0].style.background=newRGB;
+
+		  updateRGB(document.getElementById('redInput').value,document.getElementById('greenInput').value,document.getElementById('blueInput').value);
+		}
+
+		function updateGreen(val) {
+		  document.getElementById('greenInput').value=val;
+		  var rVal=document.getElementsByClassName("green");
+		  var newRGB = "rgb(0,"+val+",0)";
+		  rVal[0].style.background=newRGB;
+
+		  updateRGB(document.getElementById('redInput').value,document.getElementById('greenInput').value,document.getElementById('blueInput').value);
+		}
+
+		function updateBlue(val) {
+		  document.getElementById('blueInput').value=val;
+		  var rVal=document.getElementsByClassName("blue");
+		  var newRGB = "rgb(0,0,"+val+")";
+		  rVal[0].style.background=newRGB;
+
+		  updateRGB(document.getElementById('redInput').value,document.getElementById('greenInput').value,document.getElementById('blueInput').value);
+		}
+
+		function updateRGB (r,g,b) {
+		  var rgbVal=document.getElementsByClassName("rgbColor");
+		  var newRGB = "rgb("+r+","+g+","+b+")";
+		  rgbVal[0].style.background=newRGB;
+		}
+	</script>
+</head>
+<body>
+	<div class="rgbForm">
+		<h2>RGB Color Picker</h2>
+		<p>RGB color values are supported in all browsers.  An RGB color value is specified with:<span class="tooltip">rgb(red, green, blue)
+		  <span class="tooltiptext">Each param (red, green, blue) defines the intensity of the color as an integer between 0 and 255 (e.g. rgb(0,0,255) is rendered blue since blue param is set to its highest whereas the others are set to 0).</span></span>.</p>
+		<div class="form-group">
+			<label>r: </label>
+			<input type="range" name="rangeInput" min="0" max="255" onchange="updateRed(this.value);">
+		  <input class="red" type="text" id="redInput" value="255" disabled>			
+		</div>
+		<div class="form-group">
+		  <label>g: </label>
+			<input type="range" name="rangeInput" min="0" max="255" onchange="updateGreen(this.value);">
+			<input class="green" type="text" id="greenInput" value="255" disabled>			
+		</div>
+		<div class="form-group">
+			<label>b: </label>
+			<input type="range" name="rangeInput" min="0" max="255" onchange="updateBlue(this.value);">
+			<input class="blue" type="text" id="blueInput" value="255" disabled>			
+		</div>
+		<div class="form-group">
+			<label>rgb: </label>
+			<input class="rgbColor" type="text" id="rgbOutput" disabled>			
+		</div>
+	</div>
+</body>
+</html>

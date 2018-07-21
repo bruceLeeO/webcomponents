@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Form UI Component</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="../../styles/main.css">
+	<style>
+		body {
+			margin: 3rem auto;
+			max-width: 320px;
+      font-size: 100%;
+		}
+		.my-form {
+			background-color: #f3f2f2;
+			padding: .5em;
+      border-radius: 4px;
+		}
+    h2 {
+      margin-top: 0.5em;
+    }    
+	</style>
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-user" viewBox="0 0 512 512">
+    <path d="m256 282c-78 0-141-64-141-141 0-78 63-141 141-141 78 0 141 63 141 141 0 77-63 141-141 141z m0-256c-63 0-115 51-115 115 0 63 52 115 115 115 64 0 115-52 115-115 0-64-51-115-115-115z m205 486l-410 0c-21 0-38-17-38-38 0-2 0-43 31-85 18-24 43-43 74-57 37-16 84-25 138-25 54 0 101 9 138 25 31 14 56 33 74 57 31 41 31 83 31 85 0 21-17 38-38 38z m-205-179c-89 0-155 24-190 70-27 35-28 70-28 71 0 7 6 12 13 12l410 0c7 0 13-5 13-12 0-1-1-36-27-71-36-46-102-70-191-70z"/>
+  </symbol>
+  <symbol id="icon-lock" viewBox="0 0 512 512">
+    <path d="m407 181l-15 0 0-45c0-75-61-136-136-136-75 0-135 61-135 136l0 45-16 0c-24 0-45 20-45 45l0 241c0 25 21 45 45 45l302 0c25 0 45-20 45-45l0-241c0-25-20-45-45-45z m-256-45c0-59 47-106 105-106 58 0 105 47 105 106l0 45-210 0z m271 331c0 8-7 15-15 15l-302 0c-8 0-15-7-15-15l0-241c0-8 7-15 15-15l302 0c8 0 15 7 15 15l0 241z"/>
+  </symbol>
+  </svg>
+  <form class="my-form" action="#!">
+    <h2>Login</h2>    
+  	<div class="form-field">
+  		<span class="span-form-icon">
+  	    <svg class="icon-medium"><use xlink:href="#icon-user"></use></svg>
+  	  </span>
+  	  <strong>Log In</strong> or<a href="./signup.html">Sign Up Here</a>
+  	</div>
+  	<div class="form-field">
+		  <label class="form-label-hidden" for="username-or-email">Username or Email</label>
+		  <svg class="form-icon icon-user" aria-hidden="true"><use xlink:href="#icon-user"></use></svg>
+		  <input class="form-input" id="username-or-email" type="text" placeholder="Username or Email">
+    </div>
+    <div class="form-field">
+		  <label class="form-label-hidden" for="password">Password</label>
+		  <svg class="form-icon icon-lock" aria-hidden="true"><use xlink:href="#icon-lock"></use></svg>
+		  <input class="form-input" id="password" type="password" placeholder="Password">
+    </div>
+    <div class="form-input-checkbox">
+      <div class="form-checkbox-modern">
+        <input class="form-checkbox-hidden" id="remember-me" type="checkbox" value="1">
+        <label for="remember-me"></label>      
+      </div><span>Remember Me?</span>
+    </div>
+    <div class="form-field">
+      <button class="button button--size-large button-yellow">Log in</button>	
+    </div>
+    <div class="form-field">
+      <a href="#">Forgot Username or Password?</a>	
+    </div>
+  </form>  
+</body>
+</html>

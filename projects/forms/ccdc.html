@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Credit Card/Debit Card Form UI Component</title>
+   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="../../styles/main.css">
+	<style>
+		body {
+			margin: 3rem auto;
+			max-width: 360px;
+      font-size: 100%;
+		}
+		.my-form {
+			background-color: #fff;
+			padding: 1em;
+      border-radius: 4px;
+      border: 1px solid;
+		}
+
+		h2 {
+			margin-top: 0.5em;
+		}
+
+	</style>
+</head>
+<body>
+	<form class="my-form" action="#!">
+		<h2>Add a credit or debit card</h2>
+		Now accepting:
+		<div class="form-field">
+			<div class="imgContainer">
+			  <!--<img src="https://calumetartcenter.files.wordpress.com/2016/01/credit-card-logos.jpg">-->
+			  <!--<img src="http://hospiceofcitrus.org/wp-content/uploads/2015/06/creditcard-logos.jpg">-->
+			  <img src="https://www.paorthosociety.org/Resources/Pictures/CreditCardLogo.jpg">
+		  </div>
+		</div>
+		<div class="form-field">
+      <label class="form-label form-label-hidden" for="card-number">Card number</label>
+      <input class="form-input" id="card-number" type="text" placeholder="Card number">
+    </div>
+		<div class="form-field">
+	      <label class="form-label form-label-hidden" for="name-on-card">Name on card</label>
+	      <input class="form-input" id="name-on-card" type="text" placeholder="Name on card">
+	    </div>
+	  <fieldset class="form-fieldset">
+	  <legend class="form-legend">Expiration date</legend>
+	  <div class="form-group">
+	    <div class="form-field">
+	      <label class="form-label form-label-hidden" for="month">Month</label>
+	      <select class="form-input form-select" id="month">
+	        <option value="MM" selected disabled>Month</option>
+	        <option value="1">January</option>
+	        <option value="2">February</option>
+	        <option value="3">March</option>
+	        <option value="4">April</option>
+	        <option value="5">May</option>
+	        <option value="6">Jun</option>
+	        <option value="7">July</option>
+	        <option value="8">August</option>
+	        <option value="9">September</option>
+	        <option value="10">October</option>
+	        <option value="11">November</option>
+	        <option value="12">December</option>
+	      </select>
+	    </div>
+	    <div class="form-field">
+	      <label class="form-label form-label-hidden" for="year">Year</label>
+	      <select class="form-input form-select" id="year">
+	        <option value="YY" selected disabled>YYYY</option>
+	        <option value="1">2017</option>
+	        <option value="2">2018</option>
+	        <option value="3">2019</option>
+	        <option value="4">2020</option>
+	        <option value="5">2021</option>
+	        <option value="6">2022</option>
+	        <option value="7">2023</option>
+	        <option value="8">2024</option>
+	        <option value="9">2025</option>
+	        <option value="10">2026</option>
+	        <option value="11">2027</option>
+	        <option value="12">2028</option>
+	        <option value="13">2029</option>
+	        <option value="14">2030</option>
+	        <option value="15">2031</option>
+	        <option value="16">2032</option>
+	        <option value="17">2033</option>
+	        <option value="18">2034</option>
+	        <option value="19">2035</option>
+	        <option value="20">2026</option>
+	        <option value="21">2037</option>
+	      </select>
+	    </div>
+	  </div>
+	  </fieldset>
+	  <div class="form-input-checkbox">
+      <div class="form-checkbox-modern">
+        <input class="form-checkbox-hidden" id="save-this-card" type="checkbox" value="1">
+        <label for="save-this-card"></label>      
+      </div><span>Save this card</span>
+      <div class="tooltip">What's this?
+		    <span class="tooltiptext">Make this card the default payment method for all your future purchase on this website.</span>
+		  </div>
+    </div>
+    <div class="form-field">
+      <button class="button button--size-medium button-blue">Add card</button>
+      <button class="button button--size-medium button-gray-lighter">Cancel</button>	
+    </div>
+	</form>
+</body>
+</html>

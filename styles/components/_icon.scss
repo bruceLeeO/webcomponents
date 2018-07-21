@@ -1,0 +1,165 @@
+/**
+ * ICON
+ */
+
+/* Default */
+[class^="icon-"], [class*=" icon-"] {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  fill: currentColor;
+}
+
+/* Sizes */
+
+.icon-1downsmall {
+  width: 0.0125em;
+  height: 0.0125em;
+}
+
+.icon-small {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.icon-1upsmall {
+  width: 1em;
+  height: 1em;
+}
+
+.icon-medium {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.icon-large {
+  width: 2em;
+  height: 2em;
+}
+
+.icon-1uplarge {
+  width: 3em;
+  height: 3em;
+}
+
+/* Alignment */
+.icon-left,
+.icon-right {
+  /*vertical-align: -0.125em;*/
+  vertical-align: -0.275em;
+}
+
+.icon-left {
+  margin-right: 0.25em;
+}
+
+.icon-right {
+  margin-left: 0.25em;
+}
+
+
+
+/* class button style */
+.button {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: #c3ced9;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  font-size: 100%;
+  font-family: inherit;
+  line-height: 1.5;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Colors */
+.button-blue {
+  background-color: #51d0ef;
+  color: #ffffff;
+}
+
+.button-blue:hover {
+  background-color: #48bfdc;
+}
+
+.button-blue-lightest {
+  background-color: #edfafd;
+  color: #51d0ef;
+}
+
+.button-blue-lightest:hover {
+  background-color: #def1f5;
+  color: #48bfdc;
+}
+
+.button-gray-lightest {
+  background-color: #c3ced9;
+  color: #ffffff;
+}
+
+.button-gray-lightest:hover {
+  background-color: #b0bcc7;
+}
+
+.button-gray-lightest {
+  background-color: #f3f5f8;
+  color: #acb6bf;
+}
+
+.button-gray-lightest:hover {
+  background-color: #e8ebee;
+  color: #b0bcc7;
+}
+
+/* Shapes */
+.button-pill {
+  border-radius: 9999em;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+/* Icons */
+.button-icon-left {
+  margin-right: 4px;
+}
+
+.button-icon-right {
+  margin-left: 4px;
+}
+/*
+a {
+	text-decoration: none;
+	color: #000;
+}
+*/
+.button--size-small {
+  width: 10em;
+}
+
+.button--size-medium {
+  width: 48%;
+}
+
+.button--size-large {
+  width: 100%;
+}
+
+
+
+.button:hover {
+  background-color: #b0bcc7;
+}
+

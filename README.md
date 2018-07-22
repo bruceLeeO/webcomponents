@@ -7,12 +7,10 @@ Projects Live Demo
 - forms
   - [signup-form](https://bruceleeo.github.io/webcomponents/projects/forms/signup.html "Signup Form")
   - [login-form](https://bruceleeo.github.io/webcomponents/projects/forms/login.html "Login Form")
-  - billing-shipping-form
-  - search-form
-  - color-picker-form
-  - credit-debit-form
-  - contact-form
-  - schedule-form
+  - [billing-shipping-form](https://bruceleeo.github.io/webcomponents/projects/forms/shipping-billing.html "Shipping/Billing Address Form")
+  - [color-picker-form](https://bruceleeo.github.io/webcomponents/projects/forms/rgbColorPicker.html "RGB Color Picker")
+  - [credit-debit-form](https://bruceleeo.github.io/webcomponents/projects/forms/ccdc.html "Add Credit or Debit Card Form")
+  - [schedule-form](https://bruceleeo.github.io/webcomponents/projects/forms/schedule.html "Schedule Form")
 - [product-listing](https://bruceleeo.github.io/webcomponents/projects/product-listing/product-listing.html "Product Listing Page")
 
 UI Live Demo

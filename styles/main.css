@@ -865,8 +865,8 @@ div.panel {
   flex-direction: column;
   /*width: 320px;*/
   /*max-height: 300px;*/
-  width: 345px;
-  height: 425px;
+  width: 545px;
+  height: 675px;
   padding: 1em;
   background-color: #e1332d;
   border-radius: 0.95em;
@@ -894,7 +894,7 @@ div.panel {
 .calculator-button {
   flex: 1;
   /*border: 1px solid;*/
-  margin: 3px;
+  margin: 5px;
   padding: 10px;
   /*align-self: space-around;*/
   background-color: black;
@@ -923,34 +923,40 @@ div.panel {
 }
 
 .arithmetic-symbol {
-  font-size: 24px;
+  font-size: 32px;
   padding-top: 5px;
   padding-bottom: 9px;
 }
 
 .calculator-title {
-  margin: 1px;
+  margin: 5px auto;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.95);
-  letter-spacing: 14px;
-  padding-left: 14px;
-  line-height: 1.95;
+  letter-spacing: 29px;
+  padding-left: 6px;
+  line-height: 1.5;
+  text-align: right;
+  max-width: 100%;
+  font-size: 40px;
 }
 
 .calculator-form-input {
   text-align: right;
-  font-size: 18px;
-  line-height: 1.95;
+  line-height: 1.75;
   outline-color: rgba(255, 255, 255, 0.95);
   outline-color: white;
   color: black;
   border: 1px solid rgba(255, 255, 255, 0.95);
 }
 
+input[type=text] {
+  font-size: 38px;
+}
+
 @media (max-width: 2060px) {
   .calculator-button {
-    padding: 5px;
-    font-size: 20px;
+    padding: 9px;
+    font-size: 38px;
   }
 }
 .product-listing:after {

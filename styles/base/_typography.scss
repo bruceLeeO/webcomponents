@@ -1,26 +1,25 @@
 /**
  * TYPOGRAPHY
  */
-
-/* Body Text */
 body {
   font-family: $other-nice-font-stack;
   //font-family: $text-font-stack;
-  /*  -apple-system,
-    BlinkMacSystemFont,
-    "Karla",
-    "Segoe UI",
-    "Roboto",
-    "Oxygen",
-    "Ubuntu",
-    "Cantarell",
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;*/
+  //  -apple-system,
+  //  BlinkMacSystemFont,
+  //  "Karla",
+  //  "Segoe UI",
+  //  "Roboto",
+  //  "Oxygen",
+  //  "Ubuntu",
+  //  "Cantarell",
+  //  "Fira Sans",
+  //  "Droid Sans",
+  //  "Helvetica Neue",
+  //  Arial,
+  //  sans-serif;
   //font-size: 135%;
-  font-size: 130%;
+  //font-size: 130%;
+  font-size: 100%;
   line-height: 1.5;
   background-color: $white;
   color: $dull-black;

@@ -8,23 +8,9 @@ html, *, * ::before, * ::after {
 /**
  * TYPOGRAPHY
  */
-/* Body Text */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Karla", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  /*  -apple-system,
-    BlinkMacSystemFont,
-    "Karla",
-    "Segoe UI",
-    "Roboto",
-    "Oxygen",
-    "Ubuntu",
-    "Cantarell",
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;*/
-  font-size: 130%;
+  font-size: 100%;
   line-height: 1.5;
   background-color: white;
   color: #34383c;
@@ -233,37 +219,6 @@ blockquote {
 }
 
 /**
- * site header style
- */
-.site-header {
-  background-color: #34383c;
-  -web-kit-border: 2px solid #34383c;
-  -moz-border: 2px solid #34383c;
-  -ms-border: 2px solid #34383c;
-  border: 2px solid #34383c;
-}
-
-.header-logo h1 {
-  margin: 0.25em 0.25em;
-  color: #51d0ef;
-}
-.header-logo span {
-  color: white;
-}
-
-/**
- * site footer style
- */
-.site-footer {
-  background-color: #48bfdc;
-  -web-kit-border: 2px solid #48bfdc;
-  -moz-border: 2px solid #48bfdc;
-  -ms-border: 2px solid #48bfdc;
-  border: 2px solid #48bfdc;
-  text-align: center;
-}
-
-/**
  * default 12 column grid container
  */
 .container {
@@ -331,64 +286,6 @@ blockquote {
 
 .col12 {
   width: 98%;
-}
-
-/**
- * add varying shade of colors to the different section of the page
- */
-.about-section {
-  background-color: white;
-  border: 2px solid white;
-}
-
-/**
- * section-title
- */
-.section-title {
-  text-transform: uppercase;
-  font-weight: 800;
-  margin-bottom: 0;
-}
-
-/**
- * article-title
- */
-.article-title {
-  font-size: 190%;
-  font-weight: 800;
-}
-
-/**
- * article-subtitle
- */
-.article-subtitle {
-  color: #838383;
-}
-
-/**
- * about-section media style
- */
-.media {
-  width: 280px;
-  height: auto;
-  margin: auto;
-  padding: auto;
-  margin-left: 15px;
-}
-
-.projects-section {
-  background-color: #a3f5f8;
-  border: 2px solid #a3f5f8;
-}
-
-.skills-section {
-  background-color: #999999;
-  border: 2px solid #999999;
-}
-
-.contact-section {
-  background-color: #ededed;
-  border: 2px solid #ededed;
 }
 
 /**
@@ -863,8 +760,6 @@ div.panel {
   border: 1px solid #e1332d;
   display: flex;
   flex-direction: column;
-  /*width: 320px;*/
-  /*max-height: 300px;*/
   width: 545px;
   height: 675px;
   padding: 1em;
@@ -881,22 +776,21 @@ div.panel {
 
 .calculator-panel {
   flex: 1;
-  /*border: 1px solid;*/
   display: flex;
   flex-direction: row;
-  /*text-align: center;*/
   margin: 1px;
-  /*align-items: space-between;*/
   justify-content: center;
   color: rgba(255, 255, 255, 0.95);
+}
+.calculator-panel:last-of-type {
+  padding-top: 8px;
+  margin-bottom: 0;
 }
 
 .calculator-button {
   flex: 1;
-  /*border: 1px solid;*/
   margin: 5px;
   padding: 10px;
-  /*align-self: space-around;*/
   background-color: black;
   width: 100%;
   height: auto;
@@ -947,10 +841,6 @@ div.panel {
   outline-color: white;
   color: black;
   border: 1px solid rgba(255, 255, 255, 0.95);
-}
-
-input[type=text] {
-  font-size: 38px;
 }
 
 @media (max-width: 2060px) {
@@ -1366,7 +1256,6 @@ input[type=text] {
 .form-input {
   display: block;
   width: 100%;
-  font-size: 100%;
   line-height: 1;
   color: black;
   padding: 0 12px 0 12px;

@@ -118,6 +118,10 @@
 		/* remove the item added in the cart */
 		this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode.parentNode.childNodes[0]);
 
+		/* remove the event handler for the removeItemBtn */ 
+		/* console.log("removing "+this.className+" event handler object...."); */
+		this.removeEventListener("click", removeItemInCart);
+
 		/* nice hack around -- remove promo code if there's no item in the cart by checking if there's still a remove btn */
 		removeItemBtn = document.getElementsByClassName("remove-item-in-cart");
 		if (removeItemBtn.length == 0) {			
@@ -222,5 +226,6 @@
   /* retrieve the promocode-form and attach submit event listener to it */
   var promoForm = document.getElementById("promocode-form-id");
   promoForm.addEventListener("submit",preventFormDefault,true);
+  promoForm.removeEventListener("submit",preventFormDefault,true);
 
 })(window);	
